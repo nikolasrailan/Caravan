@@ -1,190 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Caravan - Inscrição</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <!-- modal -->
-    <div
-      class="modal fade"
-      id="modalLogin"
-      tabindex="-1"
-      aria-labelledby="modalLoginTitulo"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="modalLoginTitulo">
-              Entre na sua conta
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="inputLoginEmail" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="inputLoginEmail"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="loginSenha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="loginSenha" />
-              </div>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Caravan - Inscrição</title>
+</head>
 
-              <button type="submit" class="btn btn-primary">
-                Entrar na Conta
-              </button>
-              <div>
-                <small class="form-text text-muted"
-                  >Esqueceu a senha? <a href="">Clique aqui.</a></small
-                >
-              </div>
-            </form>
-          </div>
+<body>
+  <!-- modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLoginTitulo">
+            Entre na sua conta
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="inputLoginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputLoginEmail" aria-describedby="emailHelp" />
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Entrar na Conta
+            </button>
+            <div>
+              <small class="form-text text-muted">Esqueceu a senha? <a href="">Clique aqui.</a></small>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <!-- fecha modal -->
+  </div>
+  <!-- fecha modal -->
 
-    <nav
-      class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 shadow"
-    >
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-          <img src="img/caravan.svg" alt="Caravan" />
-        </a>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 shadow">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/caravan.svg" alt="Caravan" />
+      </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                href=""
-                >Locais</a
-              >
-              <div class="dropdown-menu">
-                <a href="local.html" class="dropdown-item">California</a>
-                <a href="local.html" class="dropdown-item">paris</a>
-                <a href="local.html" class="dropdown-item">Dublin</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="planos.html">Planos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#modalLogin"
-                >Login</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-outline-primary ms-md-2" href=" inscricao.html"
-                >Inscreva-se</a
-              >
-            </li>
-          </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="">Locais</a>
+            <div class="dropdown-menu">
+              <a href="local.html" class="dropdown-item">California</a>
+              <a href="local.html" class="dropdown-item">paris</a>
+              <a href="local.html" class="dropdown-item">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="planos.html">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary ms-md-2" href=" inscricao.html">Inscreva-se</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="container">
-      <div class="my-5 text-center">
-        <span class="h6 d-block">PROGRAME A VIAGEM DOS SEUS SONHOS</span>
-        <h1 class="display-4 text-primary">Inscreva-se</h1>
-      </div>
-      <div class="row">
-        <form class="col-lg-6 row" action="">
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">PROGRAME A VIAGEM DOS SEUS SONHOS</span>
+      <h1 class="display-4 text-primary">Inscreva-se</h1>
+    </div>
+    <div class="row">
+      <form class="col-lg-6" action="">
+        <div class="row">
           <div class="col-lg-6 mb-3">
             <label for="inputNome">Nome</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputNome"
-              placeholder="Nome completo"
-            />
+            <input type="text" class="form-control" id="inputNome" placeholder="Nome completo" />
           </div>
           <div class="col-lg-6 mb-3">
             <label for="inputCPF">CPF</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputCPF"
-              placeholder="xxx.xxx.xxx-xx"
-            />
+            <input type="text" class="form-control" id="inputCPF" placeholder="xxx.xxx.xxx-xx" />
           </div>
           <div class="col-lg mb-3">
             <label for="inputEmail">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="Seu melhor e-mail"
-            />
+            <input type="email" class="form-control" id="inputEmail" placeholder="Seu melhor e-mail" />
           </div>
           <div class="col-lg-6 mb-3">
             <label for="inputSenha">Senha</label>
-            <input
-              type="password"
-              class="form-control"
-              id="inputSenha"
-              placeholder="Senha de acesso"
-            />
+            <input type="password" class="form-control" id="inputSenha" placeholder="Senha de acesso" />
           </div>
           <div class="col-12 mb-3">
             <label for="inputEndereco">Endereço</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputEndereco"
-              placeholder="Nome da rua, número e bairro"
-            />
+            <input type="text" class="form-control" id="inputEndereco" placeholder="Nome da rua, número e bairro" />
           </div>
           <div class="col-md mb-3">
             <label for="inputCidade">Cidade</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputCidade"
-              placeholder=""
-            />
+            <input type="text" class="form-control" id="inputCidade" placeholder="" />
           </div>
           <div class="col-md col-6 mb-3">
             <label for="inputEstado">Estado</label>
@@ -221,99 +150,99 @@
           </div>
           <div class="col-md col-6 mb-3">
             <label for="inputCEP">CEP</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputCEP"
-              placeholder="xxxxx-xxx"
-            />
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <footer class="bg-dark text-white mt-5">
-      <div class="container py-4">
-        <div class="row">
-          <div class="col-md-3 col-6">
-            <h4 class="h6">Páginas</h4>
-            <ul class="list-unstyled">
-              <li>
-                <a href="planos.html" class="text-decoration-none">Planos</a>
-              </li>
-              <li>
-                <a href="contato.html" class="text-decoration-none">Contato</a>
-              </li>
-              <li>
-                <a href="inscricao.html" class="text-decoration-none"
-                  >Inscreva-se</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-6">
-            <h4 class="h6">Locais</h4>
-            <ul class="list-unstyled">
-              <li>
-                <a href="california.html" class="text-decoration-none"
-                  >California</a
-                >
-              </li>
-              <li>
-                <a href="paris.html" class="text-decoration-none">Paris</a>
-              </li>
-              <li>
-                <a href="dublin.html" class="text-decoration-none">Dublin</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="h6">Dados de contato</h4>
-            <ul class="list-unstyled text-secondary">
-              <li>caravan@caravan.com.br</li>
-              <li>12 99999-9999</li>
-              <li>De Seg. à Sex. das 8h às 18h</li>
-            </ul>
-          </div>
-          <div class="col-md-2 d-md-block">
-            <h4 class="h6">Redes Sociais</h4>
-            <ul class="list-unstyled d-grid gap-2 mx-auto">
-              <li>
-                <a
-                  href="#"
-                  class="btn btn-outline-secondary btn-sm mb-2"
-                  style="max-width: 140px"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="btn btn-outline-secondary btn-sm mb-2"
-                  style="max-width: 140px"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="btn btn-outline-secondary btn-sm mb-2"
-                  style="max-width: 140px"
-                  >Youtube</a
-                >
-              </li>
-            </ul>
+            <input type="text" class="form-control" id="inputCEP" placeholder="xxxxx-xxx" />
           </div>
         </div>
-      </div>
-      <div class="bg-primary text-center py-3">
-        <p class="mb-0">Caravan 2017. Alguns direitos reservados.</p>
-      </div>
-    </footer>
+        <div class="bg-light rounded shadow p-3 mb-3">
+          <h2 class="h6 text-primary">FORMAS DE PAGAMENTO</h2>
+          <nav class="nav" id="formaPagamento" role="tabList">
+            <div class="btn-group">
+              <div class="btn-group" id="myTab" role="tablist">
+                <button class="btn btn-secondary btn-sm" id="home-tab" data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                  aria-selected="true">Home</button>
+                <button class="btn btn-secondary btn-sm" id="profile-tab" data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                  aria-selected="false">Profile</button>
+              </div>
+          </nav>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">...</div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              aaaaaaaa</div>
 
-    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Páginas</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="planos.html" class="text-decoration-none">Planos</a>
+            </li>
+            <li>
+              <a href="contato.html" class="text-decoration-none">Contato</a>
+            </li>
+            <li>
+              <a href="inscricao.html" class="text-decoration-none">Inscreva-se</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Locais</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="california.html" class="text-decoration-none">California</a>
+            </li>
+            <li>
+              <a href="paris.html" class="text-decoration-none">Paris</a>
+            </li>
+            <li>
+              <a href="dublin.html" class="text-decoration-none">Dublin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6">Dados de contato</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>12 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2 d-md-block">
+          <h4 class="h6">Redes Sociais</h4>
+          <ul class="list-unstyled d-grid gap-2 mx-auto">
+            <li>
+              <a href="#" class="btn btn-outline-secondary btn-sm mb-2" style="max-width: 140px">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-outline-secondary btn-sm mb-2" style="max-width: 140px">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-outline-secondary btn-sm mb-2" style="max-width: 140px">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan 2017. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
 </html>
