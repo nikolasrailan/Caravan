@@ -156,26 +156,111 @@
         <div class="bg-light rounded shadow p-3 mb-3">
           <h2 class="h6 text-primary">FORMAS DE PAGAMENTO</h2>
           <nav class="nav" id="formaPagamento" role="tabList">
-            <div class="btn-group">
+            <div class="btn-group mb-3">
               <div class="btn-group" id="myTab" role="tablist">
                 <button class="btn btn-secondary btn-sm" id="home-tab" data-bs-toggle="tab"
                   data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                  aria-selected="true">Home</button>
+                  aria-selected="true">Cartão de Crédito</button>
                 <button class="btn btn-secondary btn-sm" id="profile-tab" data-bs-toggle="tab"
                   data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                  aria-selected="false">Profile</button>
+                  aria-selected="false">Boleto Bancário</button>
               </div>
           </nav>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-              tabindex="0">...</div>
+            <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="inputNome">Nome no Cartão</label>
+                    <input type="text" class="form-control" id="inputNome" placeholder="Nome impresso no cartão" />
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <label for="inputEstado">Mês</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option id="inputEstado" selected>Expira mês</option>
+                      <option value="1">Janeiro</option>
+                      <option value="2">Fevereiro</option>
+                      <option value="3">Março</option>
+                      <option value="4">Abril</option>
+                      <option value="5">Maio</option>
+                      <option value="6">Junho</option>
+                      <option value="7">Julho</option>
+                      <option value="8">Agosto</option>
+                      <option value="9">Setembro</option>
+                      <option value="10">Outubro</option>
+                      <option value="11">Novembro</option>
+                      <option value="12">Dezembro</option>
+                    </select>
+                  </div>
+                  <div class="col-md col-6 mb-3">
+                    <label for="inputEstado">Ano</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option id="inputEstado" selected>Expira ano</option>
+                      <option value="1">2023</option>
+                      <option value="1">2024</option>
+                      <option value="1">2025</option>
+                      <option value="1">2026</option>
+                      <option value="1">2027</option>
+                      <option value="1">2028</option>
+                      <option value="1">2029</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="inputNumero">Número do Cartão</label>
+                    <input type="text" class="form-control" id="inputNumero" placeholder="5555 5555 5555 5555" />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="inputCodigo">Código de Segurança</label>
+                    <input type="text" class="form-control" id="inputCodigo" placeholder="XXX" />
+                  </div>
+                </div>
+              </form>
+            </div>
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-              aaaaaaaa</div>
-
+              <p class="lead">Clique em contratar plano que enviaremos um boleto para o seu e-mail.</p>
+            </div>
 
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Concordo com os <a href="">Termos e Condições</a>
+            </label>
+          </div>
         </div>
+        
+        
       </form>
+      <div class="col-lg-6 mx-auto order-lg-1 mb-3">
+        <div class="col-md mb-5">
+          <h2 class="h6 text-primary ">PLANO ESCOLHIDO</h2>
+          <div class="bg-light rounded p-4 shadow">
+            <h2>Platinum <span class="badge text-bg-success">Novo</span></h2>
+            <ul class="list-unstyled lista-plano">
+              <li>→ 60 dias de viagem</li>
+              <li>→ 6 destinos diferentes</li>
+              <li>→ Tudo pago pela empresa</li>
+              <li>→ Ingressos para festa</li>
+            </ul>
+            <form action="">
+              <select id=inputCidade class="form-select bg-light" aria-label="Default select example">
+                <option selected>Selecione a cidade</option>
+                <option value="1">California</option>
+                <option value="2">Paris</option>
+                <option value="3">Dublin</option>
+              </select>
+            </form>
+            <div class="row mt-3">
+              <div class="col">
+                <span class="h4">R$7.500,00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto order-lg-3 order-3">
+        <button class="btn btn-primary btn-lg" type="submit">Contratar Plano</button>
+      </div>
     </div>
   </section>
 
